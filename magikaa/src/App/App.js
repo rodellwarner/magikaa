@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-// import { Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import MAGIKA from "../MAGIKA";
-import Header from "../Header/Header";
+import Main from "../Main/Main";
 import "./App.css";
 
 class App extends Component {
@@ -12,9 +12,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <Header />
-      </div>
+      <Route
+        exact
+        path="/"
+        render={(props) => (
+          <Main
+            {...props}
+            spells={this.state.spells}
+            potions={this.state.potions}
+          />
+        )}
+      />
     );
   }
 }
