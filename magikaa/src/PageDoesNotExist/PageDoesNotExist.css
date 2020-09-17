@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:ital,wght@0,300;0,700;0,800;1,300;1,400;1,600&display=swap");
+
+.goHomeLink {
+  color: royalblue;
+}
+
+.pageDoesNotExist {
+  margin: auto;
+  width: 400px;
+  background-color: salmon;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20pt;
+  font-weight: 700;
+  margin-top: 100px;
+  padding: 50px;
+  border-radius: 5px;
+  color: white;
+}

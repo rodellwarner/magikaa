@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import MAGIKA from "../MAGIKA";
 import Main from "../Main/Main";
+import PageDoesNotExist from "../PageDoesNotExist/PageDoesNotExist";
 import "./App.css";
 
 class App extends Component {
@@ -12,17 +13,20 @@ class App extends Component {
 
   render() {
     return (
-      <Route
-        exact
-        path="/"
-        render={(props) => (
-          <Main
-            {...props}
-            spells={this.state.spells}
-            potions={this.state.potions}
-          />
-        )}
-      />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={(props) => (
+            <Main
+              {...props}
+              spells={this.state.spells}
+              potions={this.state.potions}
+            />
+          )}
+        ></Route>
+        <Route component={PageDoesNotExist} />
+      </Switch>
     );
   }
 }
