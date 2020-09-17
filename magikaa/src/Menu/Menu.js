@@ -1,20 +1,17 @@
 import React, { Component } from "react";
 import "./Menu.css";
-import { Link } from "react-router-dom";
+import Potion from "../Potion/Potion";
+import Spell from "../Spell/Spell";
 
 class Menu extends Component {
   render() {
     const potions = this.props.potions;
     const spells = this.props.spells;
 
-    console.log("Potions: ", potions, "Spells :", spells);
-
     const listOfPotions = potions.map((potion, index) => {
       return (
         <li key={index} className="listItem">
-          <Link to={`potion/${potion.id}`} className="menuItem">
-            {potion.name}
-          </Link>
+          <Potion potion={potion} />
         </li>
       );
     });
@@ -22,9 +19,7 @@ class Menu extends Component {
     const listOfSpells = spells.map((spell, index) => {
       return (
         <li key={index} className="listItem">
-          <Link to={`spell/${spell.id}`} className="menuItem">
-            {spell.name}
-          </Link>
+          <Spell spell={spell} />
         </li>
       );
     });

@@ -12,8 +12,8 @@ class Header extends Component {
             <sup>
               <u>co.</u>
             </sup>
+            ~*
           </h1>
-          ~*
         </Link>
       </header>
     );
