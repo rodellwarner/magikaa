@@ -11,21 +11,23 @@ class ItemDisplay extends Component {
       (item) => item.id === itemIdValue[0]
     );
 
-    console.log("Group of Items: ", groupOfItems);
-    console.log("Item Id : ", itemId);
-    console.log("Item Id value: ", itemIdValue);
-
-    console.log("Selected Item :", selectedItem);
-
     return (
       <div className="itemDisplay">
-        <p>Effect: {selectedItem[0].effect}</p>
-        <p>Energy Cost: {selectedItem[0].energyCost}</p>
+        <p>
+          <b>Effect:</b> {selectedItem[0].effect}
+        </p>
+        <p>
+          <b>Energy Cost:</b> {selectedItem[0].energyCost}
+        </p>
         {!!selectedItem[0].duration && (
-          <p>Duration: {selectedItem[0].duration}</p>
+          <p>
+            <b>Duration:</b> {selectedItem[0].duration}
+          </p>
         )}
         {!!selectedItem[0].incantation && (
-          <p>Incantation: {selectedItem[0].incantation}</p>
+          <p>
+            <b>Incantation:</b> {selectedItem[0].incantation}
+          </p>
         )}
       </div>
     );

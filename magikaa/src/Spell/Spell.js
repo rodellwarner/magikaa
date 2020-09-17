@@ -5,9 +5,7 @@ import "./Spell.css";
 class Spell extends Component {
   render() {
     return (
-      <Link to={`/spell/${this.props.spell.id}`} className="spell">
-        {this.props.spell.name}
-      </Link>
+      <Link to={`/spell/${this.props.spell.id}`}>{this.props.spell.name}</Link>
     );
   }
 }

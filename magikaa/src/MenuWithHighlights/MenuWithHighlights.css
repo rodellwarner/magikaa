@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,600&display=swap");
 
-.menu {
+.menuWithHighlights {
   width: 200px;
   background-color: #9e95ff;
   color: white;
@@ -40,7 +40,13 @@ a:active {
 }
 
 .highlighted {
+  list-style: none;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: turquoise;
+  color: pink;
 }
 
 /* a:visited {

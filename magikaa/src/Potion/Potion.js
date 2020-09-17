@@ -5,7 +5,7 @@ import "./Potion.css";
 class Potion extends Component {
   render() {
     return (
-      <Link to={`/potion/${this.props.potion.id}`} className="potion">
+      <Link to={`/potion/${this.props.potion.id}`}>
         {this.props.potion.name}
       </Link>
     );

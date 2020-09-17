@@ -25,9 +25,11 @@ class Menu extends Component {
     });
     return (
       <div className="menu">
-        Potions:<br></br>
+        <b>Potions:</b>
+        <br></br>
         {listOfPotions}
-        Spells:<br></br>
+        <b>Spells:</b>
+        <br></br>
         {listOfSpells}
       </div>
     );
